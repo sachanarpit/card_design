@@ -1,0 +1,69 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+}
+
+.card-item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 276.39px;
+  height: 172.57px;
+  margin: 11px;
+  padding: 10px;
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 5px 0px rgba(161, 161, 161, 0.75);
+  animation: 5s ease-in-out;
+  border-radius: 7.78266px;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.6) -10.09%,
+    rgba(0, 0, 0, 0.15) 42.08%
+  );
+}
+
+.card-item:before {
+  font-size: 13px;
+  color: #757575;
+}
+
+.card-item:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .card-item {
+    width: 276.39px;
+    height: 172.57px;
+  }
+
+  .like {
+    float: left;
+  }
+  .card-item:before {
+    content: none;
+  }
+}
+
+.heading {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15.5653px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.hello {
+  display: none;
+}
+.hello:hover ~ .heading {
+  display: block;
+}
